@@ -10,8 +10,10 @@ public class Main {
      *
      * <p>例如，n=5，返回2，因为1到5之间有2个质数：2和3。
      *
+     * <p>提示：对于正整数n，如果用2到Math.sqrt(n)+1之间的所有整数去除，均无法整除，则n为质数。
+     *
      * @param n 给定的数字
-     * @return 1到n之间有质数的个数
+     * @return 1到n之间(不包括n)质数的个数
      */
     public static int howManyPrimeNumbers(int n) {}
 }
