@@ -9,7 +9,9 @@ class MainTest {
     public void test() {
         int n = new java.util.Random().nextInt(1000);
         assertEquals(
-                IntStream.range(1, n).filter(Primes::isPrime).count(),
-                Main.howManyPrimeNumbers(1000));
+                java.util.stream.IntStream.range(1, n)
+                        .filter(org.apache.commons.math3.primes.Primes::isPrime)
+                        .count(),
+                Main.howManyPrimeNumbers(n));
     }
 }
