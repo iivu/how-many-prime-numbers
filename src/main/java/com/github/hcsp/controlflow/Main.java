@@ -15,27 +15,5 @@ public class Main {
      * @param n 给定的数字
      * @return 1到n之间(不包括n)质数的个数
      */
-    public static int howManyPrimeNumbers(int n) {
-        int count = 0;
-        for (int i = 1; i < n; i++) {
-            if (isPrme(i)) {
-                count++;
-            }
-        }
-        return count;
-    }
-
-    public static boolean isPrme(int number) {
-        if (number <= 1) {
-            return false;
-        } else if (number == 2) {
-            return true;
-        }
-        for (int a = 2; a < Math.sqrt(number) + 1; a++) {
-            if (number % a == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
+    public static int howManyPrimeNumbers(int n) {}
 }
